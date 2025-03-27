@@ -1,0 +1,190 @@
+
+```html
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الإلكتروني</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>مرحبًا بك في موقعي الإلكتروني</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>الرئيسية</h2>
+            <p>مرحبًا بك في الموقع الرسمي. نحن هنا لتقديم أفضل الخدمات.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>نحن شركة مبتكرة تقدم حلولًا فعّالة في مجال التكنولوجيا والبرمجة.</p>
+        </div>
+    </section>
+<section id="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <ul>
+                <li>تطوير المواقع الإلكترونية</li>
+                <li>تطوير التطبيقات الموبايل</li>
+                <li>استشارات تقنية</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <p>إذا كنت ترغب في معرفة المزيد أو لديك أي استفسارات، لا تتردد في التواصل معنا.</p>
+            <form>
+                <label for="name">اسمك:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                <label for="email">بريدك الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                <label for="message">رسالتك:</label>
+                <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 موقعي الإلكتروني. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+```css
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#home {
+    background-color: #fff;
+}
+
+#about {
+    background-color: #f9f9f9;
+}
+
+#services {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
